@@ -6,36 +6,29 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1109</width>
-    <height>429</height>
+    <width>800</width>
+    <height>640</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>task2</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>10</x>
       <y>10</y>
-      <width>1041</width>
-      <height>311</height>
+      <width>781</width>
+      <height>571</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
      <item>
-      <widget class="QSpinBox" name="spinBox"/>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>Загрузить</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="saveButton">
        <property name="text">
         <string>Сохранить</string>
        </property>
@@ -43,6 +36,13 @@
      </item>
      <item>
       <widget class="QTableWidget" name="tableWidget"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="loadButton">
+       <property name="text">
+        <string>Загрузить</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -52,7 +52,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1109</width>
+     <width>800</width>
      <height>26</height>
     </rect>
    </property>
