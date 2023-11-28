@@ -1,6 +1,5 @@
 import sqlite3
 import sys
-import threading
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidgetItem
 from sqlite3 import Error
@@ -50,7 +49,6 @@ class Film:
 
 class Repository:
    def __init__(self, database_name):
-       self.lock = threading.Lock()
        self.database = database_name
 
    def getConnection(self):
